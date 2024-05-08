@@ -1,0 +1,21 @@
+1.Connecting mysql db to python
+    1. pip install mysql-connector-python
+    2. https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
+    3. For querying products
+        https://dev.mysql.com/doc/connector-python/en/connector-python-example-cursor-select.html
+
+2. Create a Backend File -
+    This performs certain function like add product, show product and delete products
+    This file is linked to MySQL DB so it directly append the changes into that database
+
+
+3. Create a Flask Server to link the frontend with the python code for local server
+    Create routines in Flask file like /getProducts, /addProduct, /deleteProduct
+    Use the connection to the SQL method to link to the server
+    Jsonify the files i.e convert the response into JSON file
+    Add "ACCESS CONTROL ALLOW ORIGIN" which is the course policy
+
+4. Build the UI and call these methods - VSCode
+    HTML - skeleton of the UI
+    CSS - Color and feel of the UI
+    JS - this file connects all the backend and frontend (ui) by making calls to the server and backend
